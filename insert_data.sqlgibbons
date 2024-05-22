@@ -1,0 +1,69 @@
+INSERT INTO bids (title, sector, closing_date)
+VALUES ("Medical Technology - Product Information Management Data Platform - Alpha phase", "DHSC", "07/02/2024");
+
+INSERT INTO rounds (round, outcome, bid_id)
+VALUES
+(1, "shortlisted", 1),
+(2, NULL, 1);
+
+INSERT INTO sections (section, limit_per_question_default, limit_unit, round_id)
+VALUES
+("Essential Skills and Experience", 750, "char",1),
+("Nice-to-have", 750, "char", 1),
+("Social Value Response",750, "word",2);
+ 
+
+INSERT INTO questions (question, question_weighting_value,section_id)
+VALUES
+("Experience of delivering an alpha phase for a large-scale data platform
+which meets the GOV.UK Service Standard and Technical Code of Practice criteria,
+including experience of successfully passing a service assessment", 20, 1),
+("Experience of working with different types of
+primary and secondary data and how to integrate
+those into a central data platform, including data
+cleansing and development of data standard.", 10, 1),
+("Significant experience in developing, testing and
+iterating prototypes through user testing/research,
+ensuring this will lead to the successful delivery of
+this service, and evaluating options for any future
+beta phase.", 10, 1),
+("Experience of developing data driven solutions,
+including initial priming of a database and on-going
+maintenance of data.", 10, 1),
+("Significant user research experience, including in
+line with GOV.UK Service Manual recommended
+practices.", 10, 1),
+("Experience of working with product-level and/or
+healthcare data.", 34, 2),
+("Describe the commitment your organisation will make, for this contract, to
+ensure that opportunities under the contract deliver the Policy Outcome and
+Award Criteria. 
+Please include: ·
+your ‘Method Statement’, stating how you will achieve this and how your
+commitment meets the Award Criteria, and 
+a timed project plan and process, including how you will implement your
+commitment and by when. 
+Also, how you will monitor, measure and report on your commitments/the impact of
+your proposals. You should include but not be limited to: 
+timed action plan
+quantitative commitments
+use of reporting metrics
+tools/processes used to gather data
+reporting
+feedback
+transparency
+how you will influence staff, suppliers, customers and communities through the
+delivery of the contract to support the Policy Outcome, e.g., engagement,
+codesign/creation, training and education, partnering/collaborating,
+volunteering.
+", 10,NULL);
+
+INSERT INTO answers (answer, author, question_id, score)
+VALUES
+("We delivered alpha phases of the Performance Platform and Data.gov.uk, both large-scale data platforms run by the Government Digital Service.
+
+Performance Platform recorded many thousands of service KPIs for transactional services as required by the Service Standard and Data.gov.uk catalogues over 62k public sector datasets comprising millions of records of metadata.
+
+We delivered both in line with the Tech Code of Practice and Service Standard by building a strong understanding of user needs and translating these into development of new publishing processes. We took both services through Alpha assessments which they passed (visible on gov.uk/service-standard-reports).
+
+Our team also includes assessors who have assessed over 30 GOV.UK services.", NULL, 1, NULL)
